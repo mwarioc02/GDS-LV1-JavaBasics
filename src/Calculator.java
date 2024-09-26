@@ -28,5 +28,35 @@ public class Calculator {
 
         // berechnung direkt sout
         System.out.println(a + b);
+
+        double c = 4.5;
+        double g = 5.6;
+
+        print(c,g);
+
     }
+
+    public static double add(double a, double b) {
+        return a+b;
+    }
+    public static double sub(double a, double b) {
+        return a-b;
+    }
+    public static double mul(double a, double b) {
+        return a*b;
+    }
+    public static double div(double a, double b) {
+        return a/b;
+    }
+    public static double mod(double a, double b) {
+        return a%b;
+    }
+    public static void print(double a, double b){
+        System.out.println(add(a,b));;
+        System.out.println(sub(a,b));;
+        System.out.println(mul(a,b));;
+        System.out.println(div(a,b));;
+        System.out.println(mod(a,b));;
+    }
+
 }
