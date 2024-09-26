@@ -27,5 +27,21 @@ public class ArithmetischeOperationen {
         // System.out.println("Division durch 0: " + (3 / 0));
 
 
+        // Unäre Operatoren
+
+        int j = 3;
+        System.out.println();
+        System.out.println("j = " + j);
+        System.out.println("j = " + j++); // Erwartung: 3
+        System.out.println("j = " + j); // Erwartung: 4
+
+        // j = 4 -> an dieser Stelle
+        System.out.println("j = " + (++j)); // Erwartung: 5
+
+
+        // a++ => kurzschreibweise für a = a + 1
+        a += 1; // a = a + 1
+
+
     }
 }
