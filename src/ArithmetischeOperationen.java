@@ -43,5 +43,27 @@ public class ArithmetischeOperationen {
         a += 1; // a = a + 1
 
 
+        int x = 3;
+        int y = 3;
+
+        boolean z = x == y;
+        System.out.println("z = " + z);
+
+        System.out.println();
+        System.out.println(3 != 4);
+        System.out.println(3 != 3);
+        System.out.println(3 <= 3);
+
+        String firstNameA = "Max";
+        String firstNameB = "Max";
+
+        System.out.println();
+        System.out.println(firstNameA == firstNameB);
+
+        String lastNameA = new String("Mustermann");
+        String lastNameB = new String("Mustermann");
+        System.out.println();
+        System.out.println(lastNameA == lastNameB);
+        System.out.println(lastNameA.equals(lastNameB));
     }
 }
