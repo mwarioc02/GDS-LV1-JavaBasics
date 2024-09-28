@@ -32,8 +32,14 @@ public class Calculator {
         double c = 4.5;
         double g = 5.6;
 
-        print(c,g);
+        print(add(c,g),
+                sub(c,g),
+                mul(c,g),
+                div(c,g),
+                mod(c,g));
 
+        int[] arr = {1,2,3,4};
+        sum(arr);
     }
 
     public static double add(double a, double b) {
@@ -51,12 +57,20 @@ public class Calculator {
     public static double mod(double a, double b) {
         return a%b;
     }
-    public static void print(double a, double b){
-        System.out.println(add(a,b));;
-        System.out.println(sub(a,b));;
-        System.out.println(mul(a,b));;
-        System.out.println(div(a,b));;
-        System.out.println(mod(a,b));;
+    public static void print(double add, double sub, double mul, double div, double mod){
+        System.out.println(add);
+        System.out.println(sub);
+        System.out.println(mul);
+        System.out.println(div);
+        System.out.println(mod);
+    }
+
+    public static void sum(int[] arr) {
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++){
+            sum += arr[i];
+        }
+        System.out.println("sum "+ sum);
     }
 
 }
